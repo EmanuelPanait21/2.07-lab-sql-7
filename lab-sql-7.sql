@@ -34,7 +34,7 @@ SELECT rating, COUNT(rating) AS 'Count' FROM film GROUP BY rating;
 -- Q6. What is the mean  average length of the film for each rating type? Round off the average lengths to two decimal places
 SELECT ROUND(avg(length)) AS 'Average Length', rating FROM film GROUP BY rating;
 
--- Q8. Which kind of movies (rating) have a mean duration of more than two hours?
+-- Q7. Which kind of movies (rating) have a mean duration of more than two hours?
 SELECT rating, avg(length) AS 'Average Length' 
 FROM film 
 GROUP BY rating
